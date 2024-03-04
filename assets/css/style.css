@@ -18448,7 +18448,7 @@ input[type=checkbox]:checked + label:after {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 370px;
+  /* max-width: 370px; */
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
@@ -18474,9 +18474,15 @@ input[type=checkbox]:checked + label:after {
           align-self: flex-end;
   line-height: 43px;
 }
+.ls-max-w{
+  max-width: 650px;
+}
 @media (max-width: 479px) {
   .about-content .experience.style-2 .year {
     font-size: 35px;
+  }
+  .ls-max-w{
+    max-width: 380px;
   }
 }
 .about-content .experience.style-2 .our-progress {
