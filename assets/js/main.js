@@ -33,8 +33,10 @@
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 300) {
             $('.header-sticky').addClass('sticky');
+            $('.header-sticky img').css('width', '70%');
         } else {
             $('.header-sticky').removeClass('sticky');
+            $('.header-sticky img').css('width', '100%');
         }
     });
 
