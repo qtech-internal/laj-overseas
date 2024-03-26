@@ -17352,7 +17352,7 @@ input[type=checkbox]:checked + label:after {
   display: inline-block;
 }
 .main-nav > ul > li:not(:last-child) {
-  padding-right: 55px;
+  padding-right: 42px;
 }
 @media (max-width: 1199px) {
   .main-nav > ul > li:not(:last-child) {
