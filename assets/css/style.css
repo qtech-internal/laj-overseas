@@ -39,7 +39,9 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Yantramanav:wght@300;400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700;900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -87,7 +89,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Yantramanav, sans-serif;
+  --bs-body-font-family: Montserrat, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -146,7 +148,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #00225a;
@@ -6744,7 +6746,7 @@ textarea.form-control-lg {
   display: block;
   padding: var(--bs-tooltip-arrow-height);
   margin: var(--bs-tooltip-margin);
-  font-family: "Yantramanav", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6854,7 +6856,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: "Yantramanav", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -16712,7 +16714,7 @@ img {
   max-width: 360px;
 }
 .section-desc {
-  font-family: "Yantramanav", sans-serif;
+  font-family: "Montserrat", sans-serif;
   max-width: 440px;
 }
 @media (max-width: 991.98px) {
@@ -16937,7 +16939,7 @@ blockquote {
   text-align: left;
 }
 blockquote p {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 635px;
   font-size: 20px;
   margin-right: auto;
@@ -17246,7 +17248,7 @@ input[type=checkbox]:checked + label:after {
 .header-top a,
 .header-top span {
   vertical-align: middle;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-left: 5px;
   font-weight: 500;
   color: #fff;
@@ -17301,7 +17303,7 @@ input[type=checkbox]:checked + label:after {
   }
 }
 .header-top-right ul li.login-info a {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 .header-top-right ul li.login-info a span {
@@ -17352,7 +17354,7 @@ input[type=checkbox]:checked + label:after {
   display: inline-block;
 }
 .main-nav > ul > li:not(:last-child) {
-  padding-right: 42px;
+  padding-right: 38px;
 }
 @media (max-width: 1199px) {
   .main-nav > ul > li:not(:last-child) {
@@ -17383,13 +17385,13 @@ input[type=checkbox]:checked + label:after {
   cursor: pointer;
 }
 .main-nav > ul > li > a {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #fff;
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
-  font-size: 20px;
+  font-size: 1rem;
 }
 .main-nav > ul > li > a span {
   position: relative;
@@ -17663,7 +17665,7 @@ input[type=checkbox]:checked + label:after {
   font-size: 22px;
 }
 .slide-content .sub-title {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 30px;
   display: block;
@@ -17717,7 +17719,7 @@ input[type=checkbox]:checked + label:after {
   }
 }
 .slide-content .btn {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
@@ -18194,7 +18196,7 @@ input[type=checkbox]:checked + label:after {
 }
 .banner-content .short-desc {
   font-weight: 300;
-  font-family: "Yantramanav", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media (max-width: 991.98px) {
   .banner-content .short-desc {
@@ -18391,7 +18393,7 @@ input[type=checkbox]:checked + label:after {
   }
 }
 .about-img-wrap .experience .year {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 72px;
   line-height: 30.03px;
@@ -18466,7 +18468,7 @@ input[type=checkbox]:checked + label:after {
   width: 80px;
 }
 .about-content .experience.style-2 .year {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 72px;
   -webkit-align-self: flex-end;
@@ -19101,7 +19103,7 @@ input[type=checkbox]:checked + label:after {
   position: relative;
 }
 .testimonial-content .short-desc {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   font-weight: 500;
   color: #2b2d37;
@@ -19134,7 +19136,7 @@ input[type=checkbox]:checked + label:after {
   font-size: 18px;
 }
 .testimonial-content .user-occupation {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
@@ -19451,7 +19453,7 @@ input[type=checkbox]:checked + label:after {
   }
 }
 .newsletter-form .form-btn_wrap .btn {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   padding: 0 30px;
   height: 100%;
@@ -19556,7 +19558,7 @@ input[type=checkbox]:checked + label:after {
           align-items: center;
 }
 .breadcrumb-sub-title {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 30px;
   display: block;
@@ -19610,7 +19612,7 @@ input[type=checkbox]:checked + label:after {
 .sidebar-categories .title {
   border-bottom: 1px solid #5b749a;
   background-color: #ff5e13;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 28px;
   padding-top: 10px;
@@ -19924,7 +19926,7 @@ input[type=checkbox]:checked + label:after {
   border-radius: 0;
   font-size: 20px;
   font-weight: 600;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-left: 0;
   padding-right: 0;
 }
