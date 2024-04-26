@@ -18856,6 +18856,11 @@ input[type=checkbox]:checked + label:after {
   padding-left: 10px;
   max-width: 290px;
 }
+/* texts-color */
+.textss {
+  color: #EB002B;
+}
+
 
 /*----------------------------------------*/
 /*  10. Service
@@ -19622,10 +19627,14 @@ input[type=checkbox]:checked + label:after {
 @media (max-width: 575.98px) {
   .breadcrumb-title {
     font-size: 50px;
+  
   }
 }
 .breadcrumb-desc {
   max-width: 380px;
+  color: #eb002b;
+  font-weight: 800;
+
 }
 
 /*----------------------------------------*/
