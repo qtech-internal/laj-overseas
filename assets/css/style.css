@@ -19633,7 +19633,7 @@ input[type=checkbox]:checked + label:after {
 .breadcrumb-desc {
   max-width: 380px;
   color: #eb002b;
-  font-weight: 800;
+  font-weight: 600;
 
 }
 
