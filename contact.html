@@ -385,10 +385,11 @@
                                 <p class="short-desc mb-0">Construction of itself, because it is pain, but because some are
                                     proper style design occur in toil and pain pleasure we have a expert team some of the main
                                     features..</p>
-                                <div class="contact-info pt-5">
-                                    <h3 class="title mb-0">Office Address</h3>
-                                    <p class="short-desc with-border mb-0">243, Abadi Gobindgarh, Vill Gobindgarh, Ludhiana Punjab 141010</p>
-                                </div>
+                                    <div class="contact-info pt-5">
+                                        <h3 class="title mb-0">Office Address</h3>
+                                        <p class="short-desc with-border mb-0">243, Abadi Gobindgarh, Vill Gobindgarh, Ludhiana Punjab 141010</p>
+                                    </div>
+                                    
                                 <div class="contact-info pt-4">
                                     <h3 class="title mb-0">Contact Info</h3>
                                     <ul>
@@ -422,19 +423,161 @@
                             <h2 class="contact-form-title mb-3">Leave a Message</h2>
                             <p class="contact-form-desc mb-0">Top rated construction packages we pleasure
                                 ationally obtain simple and easy</p>
-                            <form id="contact-form" class="contact-form pt-10" action="https://whizthemes.com/mail-php/mamunur/oxybuild/oxybuild.php">
-                                <div class="group-input">
-                                    <input type="text" name="con_name" id="con_name" placeholder="Your Name*" class="input-field me-6">
-                                    <input type="text" name="con_email" id="con_email" placeholder="Your Email*" class="input-field mt-6 mt-sm-0">
-                                </div>
-                                <div class="form-field mt-6">
-                                    <textarea name="con_message" id="con_message" placeholder="Message" class="textarea-field"></textarea>
-                                </div>
-                                <div class="button-wrap mt-8">
-                                    <button type="submit" value="submit" class="btn btn-custom btn-secondary btn-primary-hover" name="submit">Submit</button>
-                                    <p class="form-messege mt-5 mb-0"></p>
-                                </div>
-                            </form>
+                            <!-- Modal HTML structure -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Form submitted successfully!</p>
+    </div>
+</div>
+
+<!-- Form HTML -->
+<form id="contact-form" class="contact-form pt-10" action="https://whizthemes.com/mail-php/mamunur/oxybuild/oxybuild.php">
+    <div class="group-input">
+        <input type="text" name="con_name" id="con_name" placeholder="Your Name*" class="input-field me-6" required>
+        <input type="email" name="con_email" id="con_email" placeholder="Your Email*" class="input-field mt-6 mt-sm-0" required>
+    </div>
+    <div class="form-field mt-6">
+        <textarea name="con_message" id="con_message" placeholder="Message" class="textarea-field" required></textarea>
+    </div>
+    <div class="button-wrap mt-8">
+        <button type="submit" value="submit" class="btn btn-custom btn-secondary btn-primary-hover" name="submit">Submit</button>
+        <p class="form-message mt-5 mb-0"></p>
+    </div>
+</form>
+
+<style>
+    /* Style for the modal */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        max-width: 600px;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    .close {
+        color: #aaa;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 50px;
+        font-weight: bold;
+    
+        
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    // Modal display logic
+    var modal = document.getElementById('successModal');
+    var closeButton = document.querySelector('.close');
+    
+    // Function to show the modal
+    function showModal() {
+        modal.style.display = 'block';
+    }
+    
+    // Function to hide the modal
+    function closeModal() {
+        modal.style.display = 'none';
+    }
+    
+    // Close modal when close button is clicked
+    closeButton.addEventListener('click', function() {
+        closeModal();
+    });
+    
+    // Close modal when user clicks outside of modal
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    });
+    
+    // Form submission logic
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the form from submitting normally
+        
+        // Validate form fields
+        var name = document.getElementById('con_name').value.trim();
+        var email = document.getElementById('con_email').value.trim();
+        var message = document.getElementById('con_message').value.trim();
+        
+        // Check if fields are empty
+        if (name === '' || email === '' || message === '') {
+            var messageElement = document.querySelector('.form-message');
+            messageElement.textContent = 'Please fill in all required fields.';
+            return;
+        }
+        
+        // Check email format using regex
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            var emailField = document.getElementById('con_email');
+            emailField.classList.add('error');
+            var messageElement = document.querySelector('.form-message');
+            messageElement.textContent = 'Please enter a valid email address.';
+            return;
+        }
+        
+        // If all validations pass, show success modal
+        showModal();
+        
+        // Optionally, you can submit the form data using AJAX here
+        
+        // Clear form fields after submission (optional)
+        document.getElementById('contact-form').reset();
+        
+        // Clear any previous error messages
+        var messageElement = document.querySelector('.form-message');
+        messageElement.textContent = '';
+    });
+    
+    // Clear error classes and messages on input change
+    document.getElementById('con_name').addEventListener('input', function () {
+        this.classList.remove('error');
+        clearFormMessage();
+    });
+    
+    document.getElementById('con_email').addEventListener('input', function () {
+        this.classList.remove('error');
+        clearFormMessage();
+    });
+    
+    document.getElementById('con_message').addEventListener('input', function () {
+        clearFormMessage();
+    });
+    
+    // Function to clear form error messages
+    function clearFormMessage() {
+        var messageElement = document.querySelector('.form-message');
+        messageElement.textContent = '';
+    }
+</script>
+
                         </div>
                         <div class="col-lg-6 ps-lg-10">
                             <div class="map-with-pattern pt-9">

@@ -16871,7 +16871,10 @@ img {
   opacity: 0;
 }
 .btn-project:hover {
+  /* color: red; */
   color: #fff;
+  color: #ABA9C3 !important;
+  
 }
 .btn-project:hover span:before {
   opacity: 1;
@@ -17510,14 +17513,17 @@ input[type=checkbox]:checked + label:after {
 
 /* ---Header Logo--- */
 .header-fixed-logo {
-  margin: auto 90px auto auto;
+  margin: auto 90px auto auto; /* Default margin */
 }
+
 @media (max-width: 1599px) {
   .header-fixed-logo {
-    width: calc(100% - 60px);
-    margin: 0 auto;
+      width: calc(100% - 60px); /* Adjusted width */
+      margin: 0 auto; /* Center the logo horizontally */
+      height: auto; /* Ensures the height adjusts proportionally */
   }
 }
+
 .header-logo-wrap {
   background-color: #fff;
   width: 28%;
@@ -20115,9 +20121,19 @@ input[type=checkbox]:checked + label:after {
 .contact-info .short-desc.with-border {
   border-bottom: 1px solid #dee2e6;
   padding-bottom: 30px;
+  font-size: 19px;
 }
 .contact-info ul li:not(:last-child) {
   padding-bottom: 5px;
+  font-size: 19px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically (if needed) */
+  text-align: center; /* Center text inside the div */
+  margin: 0 auto; /* Center the div itself horizontally */
 }
 
 /* ---Contact Form--- */
