@@ -17684,7 +17684,7 @@ input[type=checkbox]:checked + label:after {
   padding-left: 100px;
 }
 .slide-content .sub-title:before {
-  background-color: #EB002B;
+  background-color: white;
   width: 80px;
   height: 1px;
   position: absolute;
@@ -19614,7 +19614,7 @@ input[type=checkbox]:checked + label:after {
   padding-left: 100px;
 }
 .breadcrumb-sub-title:before {
-  background-color: #EB002B;
+  background-color: white;
   width: 80px;
   height: 1px;
   position: absolute;
