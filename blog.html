@@ -254,8 +254,13 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="product.html">
+                                         <a href="#" class="dropdown-btn">
                                             <span class="mm-text">iron products</span>
+                                            <div class="dropdown-container">
+                                                <a href="auto.html">Web Development</a>
+                                                <a href="#">App Development</a>
+                                                <a href="#">SEO</a>
+                                            </div>
                                         </a>
                                     </li>
                                     <li class="drop-holder">
@@ -751,6 +756,17 @@
 
     <!--Main JS (Common Activation Codes)-->
     <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    var dropdown = document.querySelector(".dropdown-btn");
+    var dropdownContainer = document.querySelector(".dropdown-container");
+
+    dropdown.addEventListener("click", function () {
+        dropdownContainer.style.display = dropdownContainer.style.display === "block" ? "none" : "block";
+    });
+});
+
+    </script>
 
 </body>
 
