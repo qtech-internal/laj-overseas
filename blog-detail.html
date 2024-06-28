@@ -258,45 +258,42 @@
                                             <span class="mm-text">About Us</span>
                                         </a>
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="/#Products">
-                                            <span class="mm-text">Iron Products
-                                                <i class="ion-ios-arrow-down"></i>
-                                            </span>
-                                        </a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="auto.html"><span class="mm-text">Auto Parts</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="tractor.html"><span class="mm-text">Tractor Parts</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="striking-tools.html"><span class="mm-text">Striking
-                                                        Tools</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="agriculture.html"><span class="mm-text">Agriculture
-                                                        Parts</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="railway.html"><span class="mm-text">Railway Parts</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="chain-links.html"><span class="mm-text">Chain Links</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="hubs&gears.html"><span class="mm-text">Hubs&Gears</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="rotavator.html"><span class="mm-text">Rotavator
-                                                        Parts</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="flanges.html"><span class="mm-text">Flanges</span></a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-btn">
+                                           <span class="mm-text">iron products</span>
+                                           <div class="dropdown-container p-2">
+                                               <ul class="p-2">
+                                                   <li>
+                                                       <a href="auto.html">Auto Parts</a>
+                                                   </li>
+                                                   <li>
+                                                       <a href="tractor.html">Tractor Parts</a>
+                                                   </li>
+                                                   <li>
+                                                       <a href="striking-tools.html">Striking Tools</a>
+                                                   </li>
+                                                   <li>
+                                                       <a href="agriculture.html">Agriculture Parts</a>
+                                                   </li>
+                                                   <li>
+                                                       <a href="railway.html">Railway Parts</a>
+                                                   </li>
+                                                   <li>
+                                                       <a href="chain-links.html">Chain Links</a>
+                                                   </li>
+                                                   <li>
+                                                       <a href="hubs&gears.html">Hubs&Gears</a>
+                                                   </li>
+                                                   <li>
+                                                       <a href="rotavator.html">Rotavator Parts</a>
+                                                   </li>
+                                                   <li>
+                                                       <a href="flanges.html">Flanges</a>
+                                                   </li>
+                                               </ul>
+                                           </div>
+                                       </a>
+                                   </li>
                                     <li class="menu-item-has-children">
                                         <a href="/#OurMission">
                                             <span class="mm-text">Our Mission
@@ -868,6 +865,17 @@
 
     <!--Main JS (Common Activation Codes)-->
     <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    var dropdown = document.querySelector(".dropdown-btn");
+    var dropdownContainer = document.querySelector(".dropdown-container");
+
+    dropdown.addEventListener("click", function () {
+        dropdownContainer.style.display = dropdownContainer.style.display === "block" ? "none" : "block";
+    });
+});
+
+    </script>
 
 </body>
 

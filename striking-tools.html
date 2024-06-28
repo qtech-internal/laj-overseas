@@ -739,6 +739,17 @@
 
     <!--Main JS (Common Activation Codes)-->
     <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    var dropdown = document.querySelector(".dropdown-btn");
+    var dropdownContainer = document.querySelector(".dropdown-container");
+
+    dropdown.addEventListener("click", function () {
+        dropdownContainer.style.display = dropdownContainer.style.display === "block" ? "none" : "block";
+    });
+});
+
+    </script>
 
 </body>
 
